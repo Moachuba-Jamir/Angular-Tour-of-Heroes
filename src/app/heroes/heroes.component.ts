@@ -1,3 +1,4 @@
+import { getCurrencySymbol } from '@angular/common';
 import { Component } from '@angular/core';
 import { Hero } from '../hero';
 import { HEROES } from '../mockHeroes';
@@ -20,5 +21,9 @@ selectedHero?: Hero;
 onSelect(hero : Hero): void{
  this.selectedHero = hero;
 }
+
+classVar = "button:hover ul button:active"
+
+
 }
 

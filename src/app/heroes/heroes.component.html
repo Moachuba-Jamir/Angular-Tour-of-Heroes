@@ -8,7 +8,7 @@
 <div  id="hero-container">
     <h2>MY heroes for Mobile Legends</h2>
     <ul>
-        <li *ngFor= "let hero of heroes" [class.Selected] = "hero === selectedHero" >
+        <li *ngFor= "let hero of heroes" [class] = "classVar">
             <button type="button" (click) = " onSelect(hero)">
                 <span>{{hero.id}}</span>
                 <span>{{hero.name}}</span>
@@ -17,9 +17,4 @@
     </ul>
 </div>
 
-<!-- setting up a two way data binding model with "ngModel" -->
-
-<div class="form-container" *ngIf="selectedHero">
-    <h2>Name:  {{selectedHero.name}} </h2> <label for="id"> {{selectedHero.id}} </label>
-    <input  [(ngModel)] = "selectedHero.name" type="text" placeholder="hero Name">
-</div>
+<app-hero-details [hero] = "selectedHero"></app-hero-details>
