@@ -1,0 +1,7 @@
+<!-- setting up a two way data binding model with "ngModel" -->
+
+<div class="form-container" *ngIf="hero">
+    <h2>Name:  {{hero.name}} </h2> <label for="id"> {{hero.id}} </label>
+    <input  [(ngModel)] = "hero.name" type="text" placeholder="hero Name">
+</div>
+

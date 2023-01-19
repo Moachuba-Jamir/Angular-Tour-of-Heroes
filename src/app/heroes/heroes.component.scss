@@ -9,6 +9,13 @@
   .heroes li {
     display: flex;
   }
+  #hero-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+  }
   
   .heroes button {
     flex: 1;
@@ -24,19 +31,19 @@
     height: 1.8em;
   }
   
-  .heroes button:hover {
-    color: #2c3a41;
-    background-color: #e6e6e6;
+ button:hover {
+    color: #090909;
+    background-color: #00948a;
     left: .1em;
   }
   
-  .heroes button:active {
-    background-color: #525252;
+   button:active {
+    background-color: #00948a;
     color: #fafafa;
   }
   
   .heroes button.selected {
-    background-color: black;
+    background-color: rgb(175, 76, 6);
     color: white;
   }
   
@@ -63,5 +70,8 @@
   
   .heroes .name {
     align-self: center;
+  }
+  .ul{
+   list-style: none;
   }
   
